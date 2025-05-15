@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg, #f3ec78, #af4261, #3777a1, #98c4d1, #f3ec78);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    position: relative;
+    gap: 20px; /* Space between the center content and the additional section */
+}
+
+.rioDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wkI {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+}
+
+.prestasi {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position:0%50%;
+	}
+}
